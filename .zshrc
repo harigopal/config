@@ -40,6 +40,10 @@ antigen apply
 # Set the Font Awsome token.
 export FONT_AWESOME_TOKEN=SET_FONTAWESOME_TOKEN_HERE
 
+# Set nano as default editor (the path may need to be updated).
+export EDITOR=/usr/bin/nano
+export VISUAL=/usr/bin/nano
+
 # Set up NVM. https://github.com/nvm-sh/nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
