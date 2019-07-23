@@ -1,3 +1,7 @@
+# Avoid screen color and keyboard issues in terminal emulators like tmux and screen.
+export TERM="screen-256color"
+
+# Special line for PowerLevel9K.
 POWERLEVEL9K_INSTALLATION_PATH=$ANTIGEN_BUNDLES/bhilburn/powerlevel9k
 
 # Lines configured by zsh-newuser-install
