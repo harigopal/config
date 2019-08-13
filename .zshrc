@@ -1,3 +1,6 @@
+# Set standard locale.
+export LC_ALL=en_US.UTF-8
+
 # Avoid screen color and keyboard issues in terminal emulators like tmux and screen.
 export TERM="screen-256color"
 
