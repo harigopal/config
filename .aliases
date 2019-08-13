@@ -1,1 +1,2 @@
 alias gg="git grep -in"
+alias tmux="tmux -u"
