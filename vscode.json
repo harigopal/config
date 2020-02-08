@@ -10,23 +10,5 @@
     "ruby.format": "rufo",
     "ruby.useLanguageServer": true,
     "stylelint.packageManager": "yarn",
-    "css.validate": false,
-    "stylelint.config": {
-        "rules": {
-            "at-rule-no-unknown": [
-                true,
-                {
-                    "ignoreAtRules": [
-                        "tailwind",
-                        "apply",
-                        "variants",
-                        "responsive",
-                        "screen"
-                    ]
-                }
-            ],
-            "declaration-block-trailing-semicolon": null,
-            "no-descending-specificity": null
-        }
-    }
+    "css.validate": false
 }
