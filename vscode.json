@@ -1,10 +1,32 @@
 {
-  "editor.formatOnSave": true,
-  "files.autoSave": "onFocusChange",
-  "editor.tabSize": 2,
-  "files.insertFinalNewline": true,
-  "files.trimFinalNewlines": true,
-  "files.trimTrailingWhitespace": true,
-  "reason.codelens.enabled": true,
-  "workbench.editor.enablePreview": false
+    "editor.formatOnSave": true,
+    "files.autoSave": "onFocusChange",
+    "editor.tabSize": 2,
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+    "reason_language_server.per_value_codelens": true,
+    "workbench.editor.enablePreview": false,
+    "ruby.format": "rufo",
+    "ruby.useLanguageServer": true,
+    "stylelint.packageManager": "yarn",
+    "css.validate": false,
+    "stylelint.config": {
+        "rules": {
+            "at-rule-no-unknown": [
+                true,
+                {
+                    "ignoreAtRules": [
+                        "tailwind",
+                        "apply",
+                        "variants",
+                        "responsive",
+                        "screen"
+                    ]
+                }
+            ],
+            "declaration-block-trailing-semicolon": null,
+            "no-descending-specificity": null
+        }
+    }
 }
