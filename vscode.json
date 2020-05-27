@@ -10,6 +10,7 @@
     "workbench.editor.enablePreview": false,
     "ruby.format": "rufo",
     "ruby.useLanguageServer": true,
+    "ruby.intellisense": "rubyLocate",
     "stylelint.packageManager": "yarn",
     "css.validate": false
 }
