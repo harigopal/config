@@ -1,0 +1,10 @@
+# Add the git module to load order.
+zstyle ':prezto:load' pmodule \
+  'environment' \
+  'terminal' \
+  # ...other modules
+  'prompt' \
+  'git'
+
+# Use the 'agnoster' theme.
+zstyle ':prezto:module:prompt' theme 'agnoster'
