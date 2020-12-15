@@ -1,3 +1,5 @@
+alias ga="git add"
 alias gg="git grep -in"
 alias gst="git status"
+alias gdca="git diff --cached"
 alias tmux="tmux -u"
