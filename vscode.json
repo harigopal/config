@@ -6,7 +6,6 @@
   "editor.tabSize": 2,
   "editor.formatOnSave": true,
   "gitlens.codeLens.enabled": false,
-  "reason_language_server.per_value_codelens": true,
   "workbench.editor.enablePreview": false,
   "ruby.format": "rufo",
   "ruby.useLanguageServer": true,
