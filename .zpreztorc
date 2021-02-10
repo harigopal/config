@@ -7,4 +7,4 @@ zstyle ':prezto:load' pmodule \
   'git'
 
 # Use the 'agnoster' theme.
-zstyle ':prezto:module:prompt' theme 'agnoster'
+zstyle ':prezto:module:prompt' theme 'powerlevel10k'
