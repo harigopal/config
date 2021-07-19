@@ -13,4 +13,7 @@
   "stylelint.packageManager": "yarn",
   "css.validate": false,
   "scss.validate": false,
+  
+  // Windows
+  "terminal.integrated.fontFamily": "Cascadia Code PL"
 }
