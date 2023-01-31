@@ -5,15 +5,36 @@
   "files.trimTrailingWhitespace": true,
   "editor.tabSize": 2,
   "editor.formatOnSave": true,
-  "gitlens.codeLens.enabled": false,
-  "workbench.editor.enablePreview": false,
-  "ruby.format": "rufo",
+  "editor.inlineSuggest.enabled": true,
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "ruby.format": false,
   "ruby.useLanguageServer": true,
-  "ruby.intellisense": "rubyLocate",
-  "stylelint.packageManager": "yarn",
-  "css.validate": false,
-  "scss.validate": false,
-  
-  // Windows
-  "terminal.integrated.fontFamily": "Cascadia Code PL"
+  "vscode-yaml-sort.quotingType": "\"",
+  "vscode-yaml-sort.useLeadingDashes": false,
+  "workbench.startupEditor": "none",
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[erb]": {
+    "editor.defaultFormatter": "aliariff.vscode-erb-beautify"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[ruby]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.accessibilitySupport": "off",
+  "window.zoomLevel": 1
 }
