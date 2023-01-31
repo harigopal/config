@@ -39,11 +39,11 @@ Remember to not configure zsh on first-load.
 2. Match settings in `.zprestorc` with the one stored in this repo.
 3. When launching a new terminal, Powerlevel10k should offer its configuration options. To redo the configuration step, run `p10k configure`.
 
-### Install tmux
-
-Install tmux, and copy over `.tmux.conf` from this repo to home folder.
-
 ### Set up aliases
 
 1. Copy over `.aliases` from this repo to home folder.
 2. Add the line `source ~/.aliases` to `~/.zshrc`.
+
+### Install tmux
+
+Install tmux, and copy over `.tmux.conf` from this repo to home folder.
