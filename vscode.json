@@ -13,6 +13,7 @@
   "ruby.useLanguageServer": true,
   "vscode-yaml-sort.quotingType": "\"",
   "vscode-yaml-sort.useLeadingDashes": false,
+  "workbench.colorTheme": "Default Dark+",
   "workbench.startupEditor": "none",
   "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"

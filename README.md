@@ -8,18 +8,18 @@ Keeping it here helps me speed up setup, and maintain a uniform experience acros
 
 ### Install extensions
 
-- [Docker](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)
-- [DotENV](https://marketplace.visualstudio.com/items?itemName=mikestead.dotenv)
-- [ERB Formatter/Beautify](https://marketplace.visualstudio.com/items?itemName=aliariff.vscode-erb-beautify)
-- [GitHub Copilot](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot)
-- [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
-- [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
-- [ReScript](https://marketplace.visualstudio.com/items?itemName=chenglou92.rescript-vscode)
-- [Ruby](https://marketplace.visualstudio.com/items?itemName=rebornix.Ruby)
-- [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
-- [VSCode Ruby](https://marketplace.visualstudio.com/items?itemName=wingrunr21.vscode-ruby)
-- [WSL](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl)
-- [YAML Sort](https://marketplace.visualstudio.com/items?itemName=PascalReitermann93.vscode-yaml-sort)
+- [Docker](vscode:extension/ms-azuretools.vscode-docker)
+- [DotENV](vscode:extension/mikestead.dotenv)
+- [ERB Formatter/Beautify](vscode:extension/aliariff.vscode-erb-beautify)
+- [GitHub Copilot](vscode:extension/GitHub.copilot)
+- [GitLens](vscode:extension/eamodio.gitlens)
+- [Prettier](vscode:extension/esbenp.prettier-vscode)
+- [ReScript](vscode:extension/chenglou92.rescript-vscode)
+- [Ruby](vscode:extension/rebornix.Ruby)
+- [Tailwind CSS IntelliSense](vscode:extension/bradlc.vscode-tailwindcss)
+- [VSCode Ruby](vscode:extension/wingrunr21.vscode-ruby)
+- [WSL](vscode:extension/ms-vscode-remote.remote-wsl)
+- [YAML Sort](vscode:extension/PascalReitermann93.vscode-yaml-sort)
 
 ## Setting up WSL
 
