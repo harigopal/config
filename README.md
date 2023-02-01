@@ -1,4 +1,4 @@
-# Developer Config
+# Development environment configuration
 
 This repo contains instructions for setting up my developer environment and snippets from configuration files.
 
@@ -47,3 +47,8 @@ Remember to not configure zsh on first-load.
 ### Install tmux
 
 Install tmux, and copy over `.tmux.conf` from this repo to home folder.
+
+### Setup ASDF.
+
+1. Use the _ZSH & Git_ method from https://asdf-vm.com/guide/getting-started.html.
+2. Follow official instructions to install the [Node.js plugin](https://github.com/asdf-vm/asdf-nodejs/) and the [Ruby plugin](https://github.com/asdf-vm/asdf-ruby).
