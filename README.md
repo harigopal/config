@@ -38,6 +38,7 @@ Remember to not configure zsh on first-load.
 1. Follow instructions here: https://github.com/sorin-ionescu/prezto
 2. Match settings in `.zprestorc` with the one stored in this repo.
 3. When launching a new terminal, Powerlevel10k should offer its configuration options. To redo the configuration step, run `p10k configure`.
+4. Add the line `unsetopt PATH_DIRS` to `~/.zshrc` to speed up tab completions on WSL2.
 
 ### Set up aliases
 
