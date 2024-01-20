@@ -53,3 +53,7 @@ Install tmux, and copy over `.tmux.conf` from this repo to home folder.
 
 1. Use the _ZSH & Git_ method from https://asdf-vm.com/guide/getting-started.html.
 2. Follow official instructions to install the [Node.js plugin](https://github.com/asdf-vm/asdf-nodejs/) and the [Ruby plugin](https://github.com/asdf-vm/asdf-ruby).
+
+### GitHub CLI
+
+Install and set up the GitHub CLI following [official instructions](https://github.com/cli/cli#installation).
