@@ -4,15 +4,16 @@
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
   "editor.tabSize": 2,
-  "editor.fontFamily": "'CaskaydiaCove NF', Consolas, 'Courier New', monospace",
   "editor.fontLigatures": true,
   "editor.formatOnSave": true,
   "editor.inlineSuggest.enabled": true,
-  "files.associations": {
-    "*.css": "tailwindcss"
+  "github.copilot.enable": {
+    "*": true
   },
-  "ruby.format": false,
-  "ruby.useLanguageServer": true,
+  "files.associations": {
+    "*.css": "tailwindcss",
+    ".env*": "dotenv"
+  },
   "vscode-yaml-sort.quotingType": "\"",
   "vscode-yaml-sort.useLeadingDashes": false,
   "workbench.colorTheme": "Default Dark+",
@@ -39,5 +40,48 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "editor.accessibilitySupport": "off",
-  "window.zoomLevel": 1
+  "editor.tokenColorCustomizations": {
+    "[*Light*]": {
+      "textMateRules": [
+        {
+          "scope": "ref.matchtext",
+          "settings": {
+            "foreground": "#000"
+          }
+        }
+      ]
+    },
+    "[*Dark*]": {
+      "textMateRules": [
+        {
+          "scope": "ref.matchtext",
+          "settings": {
+            "foreground": "#fff"
+          }
+        }
+      ]
+    },
+    "textMateRules": []
+  },
+  "cSpell.userWords": ["omniauth", "Pupilfirst"],
+  "dotenv.enableAutocloaking": false,
+  "rubyLsp.enabledFeatures": {
+    "codeActions": true,
+    "diagnostics": false,
+    "documentHighlights": true,
+    "documentLink": true,
+    "documentSymbols": true,
+    "foldingRanges": true,
+    "formatting": true,
+    "hover": true,
+    "inlayHint": true,
+    "onTypeFormatting": true,
+    "selectionRanges": true,
+    "semanticHighlighting": true,
+    "completion": true,
+    "codeLens": true,
+    "definition": true,
+    "workspaceSymbol": true,
+    "references": true
+  }
 }

@@ -4,23 +4,6 @@ This repo contains instructions for setting up my developer environment and snip
 
 Keeping it here helps me speed up setup, and maintain a uniform experience across my machines.
 
-## Setting up VSCode
-
-### Install extensions
-
-- [Docker](vscode:extension/ms-azuretools.vscode-docker)
-- [DotENV](vscode:extension/mikestead.dotenv)
-- [ERB Formatter/Beautify](vscode:extension/aliariff.vscode-erb-beautify)
-- [GitHub Copilot](vscode:extension/GitHub.copilot)
-- [GitLens](vscode:extension/eamodio.gitlens)
-- [Prettier](vscode:extension/esbenp.prettier-vscode)
-- [ReScript](vscode:extension/chenglou92.rescript-vscode)
-- [Ruby](vscode:extension/rebornix.Ruby)
-- [Tailwind CSS IntelliSense](vscode:extension/bradlc.vscode-tailwindcss)
-- [VSCode Ruby](vscode:extension/wingrunr21.vscode-ruby)
-- [WSL](vscode:extension/ms-vscode-remote.remote-wsl)
-- [YAML Sort](vscode:extension/PascalReitermann93.vscode-yaml-sort)
-
 ## Setting up WSL
 
 ### Download and install patched _Cascadia Code_.
@@ -57,3 +40,9 @@ Install tmux, and copy over `.tmux.conf` from this repo to home folder.
 ### GitHub CLI
 
 Install and set up the GitHub CLI following [official instructions](https://github.com/cli/cli#installation).
+
+## Setting up VSCode
+
+Turn on the _Settings Sync_ feature - allow it to set up extensions and settings.
+
+A backup of VSCode's settings can be found in the `vscode.json` file alongside this README.
