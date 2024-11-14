@@ -8,34 +8,88 @@ Keeping it here helps me speed up setup, and maintain a uniform experience acros
 
 ### Download and install patched _Cascadia Code_.
 
-1. Download `CascadiaCode.zip` from https://github.com/ryanoasis/nerd-fonts/releases.
-2. Install all font files tagged as _Windows Compatible_.
-3. Configure _Terminal_ to use `CaskaydiaCove NF` (NFM is the _Mono_ font).
+1. Download `CascadiaCode.zip` from https://www.nerdfonts.com.
+2. Install the _vanilla_ NF (Nerd Font) version of the font - this includes ligatures.
+3. Configure _Terminal_ to use `CaskaydiaCove NF`.
 
-### Install ZSH
+### Install essentials
 
-Remember to not configure zsh on first-load.
+```sh
+sudo apt install curl git build-essential unzip
+```
 
-### Use _Prezto_ to setup ZSH
+### Install Brew
 
-1. Follow instructions here: https://github.com/sorin-ionescu/prezto
-2. Match settings in `.zprestorc` with the one stored in this repo.
-3. When launching a new terminal, Powerlevel10k should offer its configuration options. To redo the configuration step, run `p10k configure`.
-4. Add the line `unsetopt PATH_DIRS` to `~/.zshrc` to speed up tab completions on WSL2.
+Follow instructions at https://brew.sh.
 
-### Set up aliases
+### Install Nushell
 
-1. Copy over `.aliases` from this repo to home folder.
-2. Add the line `source ~/.aliases` to `~/.zshrc`.
+Use `brew` to install Nushell: https://www.nushell.sh/book/installation.html
+
+### Install Starship
+
+Follow instruction here: https://starship.rs/guide/#step-1-install-starship
+
+## Install Zoxide
+
+Follow instructions here: https://github.com/ajeetdsouza/zoxide
 
 ### Install tmux
 
-Install tmux, and copy over `.tmux.conf` from this repo to home folder.
+Install tmux, and write the following into `~/.tmux.conf`:
+
+```sh
+# Use Control + A as the prefix key-combo.
+set-option -g prefix C-a
+unbind-key C-b
+bind-key C-a send-prefix
+```
 
 ### Setup ASDF.
 
-1. Use the _ZSH & Git_ method from https://asdf-vm.com/guide/getting-started.html.
-2. Follow official instructions to install the [Node.js plugin](https://github.com/asdf-vm/asdf-nodejs/) and the [Ruby plugin](https://github.com/asdf-vm/asdf-ruby).
+1. Use the _Nushell & Git_ method from https://asdf-vm.com/guide/getting-started.html.
+2. Follow official instructions to install plugins:
+   1. [Node.js plugin](https://github.com/asdf-vm/asdf-nodejs/)
+   2. [Ruby plugin](https://github.com/asdf-vm/asdf-ruby)
+   3. [Erlang plugin](https://github.com/asdf-vm/asdf-erlang) and the latest OTP.
+   4. [Elixir plugin](https://github.com/asdf-vm/asdf-elixir) _(after installing Erlang)_.
+
+## Set up Nushell
+
+Add to the end of `$nu.config-path`:
+
+```sh
+# Aliases
+alias ga = git add
+alias gd = git diff
+alias gg = git grep -in
+alias gst = git status
+alias gdca = git diff --cached
+alias tmux = tmux -u
+
+# Load Starship's config.
+use ~/.cache/starship/init.nu
+
+# Set up ASDF.
+$env.ASDF_DIR = ($env.HOME | path join '.asdf')
+ source /home/hari/.asdf/asdf.nu
+
+# Set up Zoxide.
+source ~/.zoxide.nu
+```
+
+Update `$nu.env-path`:
+
+```sh
+# Append path containing Zoxide.
+$env.PATH = ($env.PATH | append "/home/hari/.local/bin")
+
+# Append brew to path.
+$env.PATH = ($env.PATH | append "/home/linuxbrew/.linuxbrew/bin")
+
+# Init zoxide.
+zoxide init nushell | save -f ~/.zoxide.nu
+```
 
 ### GitHub CLI
 
