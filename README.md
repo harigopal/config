@@ -63,6 +63,7 @@ Add to the end of `$nu.config-path`:
 alias ga = git add
 alias gd = git diff
 alias gg = git grep -in
+alias gp = git push
 alias gst = git status
 alias gdca = git diff --cached
 alias tmux = tmux -u
