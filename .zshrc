@@ -1,22 +1,10 @@
-###                                 ###
-# Leading lines inserted by Presto... #
-###                                 ###
+# Just an example .zshrc file; the following lines should be at the bottom of your .zshrc file.
 
-# Customize to your needs...
+# Activate ASDF.
+export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
 
-. /usr/local/opt/asdf/asdf.sh
+# Enable shell history for iex.
+export ERL_AFLAGS="-kernel shell_history enabled"
 
-# Load custom aliases
+# Source aliases
 source ~/.aliases
-
-# Update PATH to include zoxide and brew
-export PATH="$HOME/.local/bin:/home/linuxbrew/.linuxbrew/bin:$PATH"
-
-# Load ASDF
-. "$HOME/.asdf/asdf.sh"
-
-# Load zoxide
-eval "$(zoxide init zsh)"
-
-# Optional: Prevent zsh from renaming window titles automatically.
-DISABLE_AUTO_TITLE="true"
