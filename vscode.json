@@ -24,8 +24,6 @@
     ".env*": "dotenv",
     "*.heex": "phoenix-heex"
   },
-  "vscode-yaml-sort.quotingType": "\"",
-  "vscode-yaml-sort.useLeadingDashes": false,
   "workbench.startupEditor": "none",
   "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -99,7 +97,6 @@
     "references": true
   },
   "remote.autoForwardPortsSource": "hybrid",
-  "github.copilot.editor.enableAutoCompletions": true,
   "cSpell.language": "en,en-GB",
   "indentRainbow.colors": [
     "rgba(3, 4, 94,0.15)",
