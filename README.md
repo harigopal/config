@@ -48,7 +48,7 @@ bind-key C-a send-prefix
 ### Setup ASDF.
 
 1. Use `brew` to install ASDF: `brew install asdf`.
-2. Ensure you follow ASDF's instructions for shell integration; these should be printed when ASDF finishes installation.
+2. Follow [official instructions for setting up shell integration](https://asdf-vm.com/guide/getting-started.html).
 3. Follow official instructions to install plugins:
    1. [Node.js plugin](https://github.com/asdf-vm/asdf-nodejs/)
    2. [Ruby plugin](https://github.com/asdf-vm/asdf-ruby)
