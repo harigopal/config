@@ -16,7 +16,7 @@ Keeping it here helps me speed up setup, and maintain a uniform experience acros
 
 ```sh
 sudo apt-get update &&
-sudo apt-get install curl wget git build-essential unzip tmux
+sudo apt-get install curl wget git build-essential unzip tmux inotify-tools postgresql postgresql-contrib
 ```
 
 ### Install Brew
